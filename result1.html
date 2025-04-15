@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-Voting Result</title>
+    <style>
+        /* Change background image */
+        body {
+            /* Replace 'url_here' with the URL of the background image you want to use */
+            background-image: url("static/sus.jpg");
+            /* Set background size and repeat properties as needed */
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* Font color and size for the whole body */
+             /* Update the font color */
+            font-size: 20px; /* Update the font size */
+            font-family: Arial, sans-serif; /* Update the font family */
+        }
+
+        /* Change styles for the heading */
+        h1 {
+            font-size: 50px; /* Update the font size */
+            font-family: "Times New Roman", serif; /* Update the font family */
+            text-align: center;
+            margin-top: 20px; /* Adjust the margin to move the heading down */
+        }
+
+        /* Change styles for the voting result list */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        li {
+            font-size: 24px; /* Update the font size */
+            margin-bottom: 10px;
+            font-size: 60px;
+            color:#ff9900;
+        }
+
+        /* Change styles for the winner information */
+        h2 {
+            font-size: 60px; /* Update the font size */
+            font-family: "Times New Roman", serif; /* Update the font family */
+            text-align: center;
+        }
+
+        p {
+            font-size: 80px; /* Update the font size */
+            font-family:Arial, Helvetica, sans-serif; /* Update the font family */
+            text-align: center;
+            color:#fff
+        }
+        a:hover {
+            /* Add hover effect for the 'Log in' link */
+            color: #0f0f0f;
+          }
+          .navbar {
+            
+            overflow: hidden;
+            text-align: center;
+          }
+          
+          /* Style for the links (register, login, result) */
+          .navbar a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+            /* Set link hover color */
+            transition: color 0.3s ease;
+          }
+          
+          .navbar a:hover {
+            color: #ffcc00;
+          }
+          
+          /* Style for the buttons */
+          .btn {
+            background-color: #ffcc00;
+            color: #000;
+            /* Add border-radius for rounded corners */
+            border-radius: 5px;
+          }
+          
+          .btn:hover {
+            background-color: #ff9900;
+          }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+
+        <a href="/details" class="btn">Back</a>
+
+    <h1>Voting Result</h1>
+    <ul>
+        {% for nominee, votes in result %}
+            <li>{{ nominee|capitalize }} - {{ votes }} votes</li>
+        {% endfor %}
+    </ul>
+    
+    <h2>finally the winner is</h2>
+    <p>{{ winner }} </p>
+</body>
+</html>

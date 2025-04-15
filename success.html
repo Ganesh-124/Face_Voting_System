@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>data</title>
+  <style>
+    body {
+      /* Background image */
+      background-image: url("static/sus.jpg");
+      /* Set background size and repeat properties as needed */
+      background-size: cover;
+      background-repeat: no-repeat;
+      /* Font color and size for the whole body */
+      color: #0f0505; /* White text color */
+      font-size: 18px;
+      font-family: Arial, sans-serif;
+      font-family: "Times New Roman", serif;
+    }
+
+    .navbar a {
+      /* Existing styles for the links (register, login, admin) */
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      color: #fff;
+      text-decoration: none;
+      /* Set link hover color */
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      /* Existing styles for the hover effect */
+      color: #ffcc00;
+    }
+
+    /* Style for the buttons */
+    .btn {
+      background-color: #ffcc00;
+      color: #000;
+      /* Add border-radius for rounded corners */
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background-color: #ff9900;
+    }
+ p {
+      /* Update font style for the heading */
+      font-family: "Times New Roman", serif;
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      color:#fff;
+    }
+
+  </style>
+</head>
+
+<body> <center>
+
+  <div class="navbar">
+  
+    <a href="/index" class="btn">Home</a>
+    <a href="/train" class="btn">Train </a>
+    <a href="/details" class="btn">Back </a>
+  </div>
+
+ 
+    <p >Successfully registered your details</p>
+    <p>Thank you !</p>
+  </center>
+
+  <!-- Success Pop-up Message -->
+  <script>
+    setTimeout(function() {
+      alert("You have successfully registered your face!");
+    }, 1000); // 1000ms = 1 second
+  </script>
+
+</body>
+</html>

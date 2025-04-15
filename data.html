@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Collection</title>
+  <style>
+    body {
+      /* Background image */
+      background-image: url("static/data.jpg");
+      /* Set background size and repeat properties as needed */
+      background-size: cover;
+      background-repeat: no-repeat;
+      /* Font color, size, and family for the whole body */
+      color: #2a2a2a; /* Dark gray text color */
+      font-size: 20px;
+      font-family: Arial, sans-serif;
+      margin-top: 20px;
+      margin-right: 80px;
+    }
+
+    p{
+      /* Update font style for the heading */
+      font-family: "Times New Roman", serif;
+      font-size: 30px;
+      font-weight: bold ;
+      text-align: center;
+      font-style: italic;
+      color:#0f0a4d;
+    }
+
+    form {
+      /* Update font size and family for the form elements */
+      font-size: 18px;
+      font-family: "Times New Roman", serif;
+      text-align: center;
+      margin-top: 20px; /* Adjust the margin to move the form up */
+    }
+
+    input[type="submit"] {
+      /* Style the submit button */
+      background-color: #ffcc00;
+      color: #000000;
+      font-size: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: "Times New Roman", serif;
+    }
+
+    input[type="submit"]:hover {
+      /* Add hover effect for the submit button */
+      background-color: #ff9900;
+    }
+
+    h1 {
+      /* Additional style for the 'Press' headings */
+      font-size: 28px;
+      font-weight: bold;
+      
+    }
+    h1 {
+      /* Update font style for the heading */
+      font-family: "Times New Roman", serif;
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+    }
+    h2 {
+      /* Update font style for the heading */
+      font-family: "Times New Roman", serif;
+      font-size: 20px;
+      font-weight: bold ;
+      text-align: center;
+      font-style: italic;
+      color:#4e0303;
+    }
+
+    .btn {
+      /* Style for the additional buttons */
+      background-color: #ffcc00;
+      color: #000000;
+      font-size: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: "Times New Roman", serif;
+      display: block; /* Make buttons take full width */
+      margin: 10px auto; /* Center the buttons horizontally */
+    }
+
+    .btn:hover {
+      /* Hover effect for the additional buttons */
+      background-color: #ff9900;
+    }
+    .navbar {
+      
+      overflow: hidden;
+      text-align: center;
+     
+    }
+    
+    /* Style for the links (register, login, result) */
+    .navbar a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      color: #fff;
+      text-decoration: none;
+      /* Set link hover color */
+      transition: color 0.3s ease;
+    }
+    
+    .navbar a:hover {
+      color: #ffcc00;
+    }
+    
+    /* Style for the buttons */
+    .btn {
+      background-color: #ffcc00;
+      color: #000;
+      /* Add border-radius for rounded corners */
+      border-radius: 5px;
+    }
+    
+    .btn:hover {
+      background-color: #ff9900;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="/index" class="btn">Home</a>
+    <a href="/register" class="btn">Back</a>
+
+    
+  </div >
+  
+  <center>
+    <h1>Register your face </h1>
+    <form action="/data" method="post">
+      <p>please move on your head & <br> wait for 2 to 3 minutes<br>while your profile picture is updating <br>
+      
+      <input type="submit" value="Register">
+    </form>
+    
+    <script>
+      setTimeout(function() {
+        alert("You have successfully  register your id details");
+      }, 1000); // 1000ms = 1 second
+    </script>
+  
+  </br<>
+</body>
+</html>

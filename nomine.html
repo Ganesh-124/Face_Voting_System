@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Page</title>
+  <style>
+    body {
+      /* Background image */
+      background-image: url("static/rs2.jpg");
+      /* Set background size and repeat properties as needed */
+      background-size: cover;
+      background-repeat: no-repeat;
+      /* Font color and size for the whole body */
+      color: #0f0505; /* White text color */
+      font-size: 18px;
+      font-family: Arial, sans-serif;
+       font-family: "Times New Roman", serif;
+    }
+
+    h1 {
+      /* Update font style for the heading */
+      font-family: "Times New Roman", serif;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      
+    }
+
+    form {
+      /* Update font style for the form elements */
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      text-align: center; /* Align the form in the center */
+      margin-top: 20px; /* Adjust the margin to move the form up */
+    }
+    label {
+      display: block;
+      
+      color: #0e0d06;
+     
+      padding: 5px 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: "Times New Roman", serif;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      /* Update font size for the input fields */
+      font-size: 16px;
+      background-color: #726b6b;
+      color: #fce303;
+      
+    }
+
+    input[type="submit"] {
+      /* Style the submit button */
+      background-color: #ecc309;
+      color: #050505;
+      font-size: 20px;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: "Times New Roman", serif;
+    }
+
+    input[type="submit"]:hover {
+      /* Add hover effect for the submit button */
+      background-color: #ce9746;
+    }
+
+    p {
+      /* Update font style for the 'Already have an account?' text */
+      font-family: "Times New Roman", serif;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      text-shadow: 2px 2px 4px #000000;
+      text-align: left; /* Align the text to the left */
+      margin-left: 20px
+   
+    }
+
+    a {
+      /* Update font color and add underline for the 'Log in' link */
+      font-family: "Times New Roman", serif;
+      /* font-size: 30px; */
+      /* font-weight: bold; */
+      text-align: center;
+      /* text-shadow: 2px 2px 4px #000000; */
+    }
+
+    a:hover {
+      /* Add hover effect for the 'Log in' link */
+      color: #0f0f0f;
+    }
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+      text-align: center;
+    }
+    
+    /* Style for the links (register, login, result) */
+    .navbar a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      color: #fff;
+      text-decoration: none;
+      /* Set link hover color */
+      transition: color 0.3s ease;
+    }
+    
+    .navbar a:hover {
+      color: #ffcc00;
+    }
+    
+    /* Style for the buttons */
+    .btn {
+      background-color: #ffcc00;
+      color: #000;
+      /* Add border-radius for rounded corners */
+      border-radius: 5px;
+    }
+    
+    .btn:hover {
+      background-color: #ff9900;
+    }
+     
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="/login" class="btn">Login</a>
+    <a href="/admin" class="btn">Admin</a>
+    <a href="/index" class="btn">Home</a>
+  </div >
+  
+  
+  <center>
+  
+
+  <h1>nomine register form </h1>
+  <form action="/nomine" method="post">
+    <label for="username1">namninee name </label>
+    <input type="text" id="username1" name="username1"  placeholder="ENTER NOMINE NAME "  required>
+    <label for="zone">zone</label>
+    <input type="text" id="zone" name="zone" required>
+    <label for="id"> voter id number </label>
+    <input type="text" id="id" name="id" required>
+    
+    
+<br>
+<br>
+    <input type="submit" value="Register"><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </center>
+  </form>
+</body>
+</html>

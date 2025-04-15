@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+          /* Background image */
+          background-image: url("static/sus.jpg");
+          /* Set background size and repeat properties as needed */
+          background-size: cover;
+          background-repeat: no-repeat;
+          /* Font color and size for the whole body */
+          color: #fff;
+          font-size: 16px;
+          font-family: Arial, sans-serif;
+        }
+
+        
+        .navbar {
+          
+          overflow: hidden;
+          text-align: center;
+        }
+        
+        /* Style for the links (register, login, result) */
+        .navbar a {
+          display: inline-block;
+          margin: 10px;
+          padding: 10px 20px;
+          color: #fff;
+          text-decoration: none;
+          /* Set link hover color */
+          transition: color 0.3s ease;
+        }
+        
+        .navbar a:hover {
+          color: #ffcc00;
+        }
+        
+        /* Style for the buttons */
+        .btn {
+          background-color: #ffcc00;
+          color: #000;
+          /* Add border-radius for rounded corners */
+          border-radius: 5px;
+        }
+        
+        .btn:hover {
+          background-color: #ff9900;
+        }
+        
+        center {
+          margin-top: 30px;
+          margin-left: 500px;
+          
+        }
+        label {
+            display: block;
+            margin-bottom: 15px;
+            font-size: 18px;
+            cursor: pointer;
+            position: relative;
+            padding-left: 35px;
+            font-family:'Times New Roman', Times, serif;
+           /* Space for the custom button */
+        }
+        input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      /* Update font size for the input fields */
+      font-size: 16px;
+      background-color: #726b6b;
+      color: #fce303;
+      
+    }
+
+    input[type="submit"] {
+      /* Style the submit button */
+      background-color: #ecc309;
+      color: #000000;
+      font-size: 20px;
+      padding: 10px 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: "Times New Roman", serif;
+    }
+
+    input[type="submit"]:hover {
+      /* Add hover effect for the submit button */
+      background-color: #ce9746;
+    }
+    h2 {
+        /* Update font style for the heading */
+        font-family: "Times New Roman", serif;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+
+    }  
+       
+        
+        /* Additional styles as needed */
+        
+      </style>
+</head>
+<body><center>
+  <div class="quotes">
+  </div>
+
+    <div class="navbar">
+    
+    <a href="/index" class="btn">Home</a>
+    <a href="/voting" class="btn">Vote</a>
+
+    </div >
+   
+    <form action="/shedule" method="post">
+        <label for="choices">Choose  your shedule:</label>
+        <select id="choices" name="choices">
+          <option value="2">10am-12pm</option>
+          <option value="3">12pm-2pm</option>
+          <option value="4">2pm-4pm</option>
+          <option value="5">4pm-6pm</option>
+
+        </select>
+        <br>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    </center>
+    
+</body>
+</html>
